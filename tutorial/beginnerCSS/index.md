@@ -1,0 +1,1 @@
+Followed HTML Dog beginner CSS tutorial
