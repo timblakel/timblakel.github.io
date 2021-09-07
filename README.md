@@ -3,11 +3,11 @@
 ### Tutorial items (Artifacts created strictly from tutorials) 
 - HTML Beginner tutorial:  
 [https://timblakel.github.io/tutorial/beginnerHTML/firstpage.html](https://timblakel.github.io/tutorial/beginnerHTML/firstpage.html)  
-[https://htmldog.com/guides/html/beginner/](Link to tutorial)
+[Link to tutorial](https://htmldog.com/guides/html/beginner/)
   
 - CSS Beginner tutorial:  
 [https://timblakel.github.io/tutorial/beginnerCSS/firstpage.html](https://timblakel.github.io/tutorial/beginnerCSS/firstpage.html)  
-[https://htmldog.com/guides/css/beginner/](Link to tutorial)
+[Link to tutorial](https://htmldog.com/guides/css/beginner/)
   
 
 
