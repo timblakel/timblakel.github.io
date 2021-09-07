@@ -1,7 +1,13 @@
-Repository:  
-[https://github.com/timblakel/timblakel.github.io](https://github.com/timblakel/timblakel.github.io)
+### Repository: [https://github.com/timblakel/timblakel.github.io](https://github.com/timblakel/timblakel.github.io)
 
-HTML Beginner tutorial page:  
-[https://timblakel.github.io/tutorial/beginner/firstpage.html](https://timblakel.github.io/tutorial/beginner/firstpage.html)  
-Bare bones page based off tutorial  
+### Tutorial items (Artifacts created strictly from tutorials) 
+- HTML Beginner tutorial:  
+[https://timblakel.github.io/tutorial/beginnerHTML/firstpage.html](https://timblakel.github.io/tutorial/beginnerHTML/firstpage.html)  
+[Link to tutorial](https://htmldog.com/guides/html/beginner/)
+  
+- CSS Beginner tutorial:  
+[https://timblakel.github.io/tutorial/beginnerCSS/firstpage.html](https://timblakel.github.io/tutorial/beginnerCSS/firstpage.html)  
+[Link to tutorial](https://htmldog.com/guides/css/beginner/)
+  
+
 
