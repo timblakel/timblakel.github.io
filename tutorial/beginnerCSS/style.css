@@ -1,0 +1,26 @@
+a {
+    color: rgb(155, 75, 137);
+}
+
+body {
+    font-size: 16pt;
+    color: rgb(156, 31, 31);
+    background-color: cadetblue;
+}
+
+p {
+    background-color: cornflowerblue;
+    font-weight: 600;
+    text-decoration: overline;
+    text-transform: none;
+}
+
+h1 {
+    background-color: crimson;
+    margin: 20px;
+    padding: 40px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: cyan;
+}
+
