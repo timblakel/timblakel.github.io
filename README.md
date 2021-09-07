@@ -2,7 +2,7 @@
 
 ### Tutorial items (Artifacts created strictly from tutorials) 
 - [HTML Beginner tutorial](https://timblakel.github.io/tutorial/beginnerHTML/)  
-- [CSS Beginner tutorial](https://timblakel.github.io/tutorial/beginnerHTML/)  
+- [CSS Beginner tutorial](https://timblakel.github.io/tutorial/beginnerCSS/)  
   
 
 
