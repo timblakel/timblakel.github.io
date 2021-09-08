@@ -7,7 +7,8 @@
 - Utilized TypeScript, EaseJS, HTML, and CSS to create a site with an interactive bezier curve visual.  
     
 ## To Do List  
- - Complete and/or read introductory React (+Hooks) and Bootstrap tutorials.
- - Complete and/or read introductory Jest tutorials.
+- Add to bezier site. Title, description, ability to add points
+- Complete and/or read introductory React (+Hooks) and Bootstrap tutorials.
+- Complete and/or read introductory Jest tutorials.
   
 [Back to portfolio](https://timblakel.github.io/)
