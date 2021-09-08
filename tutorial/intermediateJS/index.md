@@ -1,3 +1,3 @@
-Something about reading through [intermediate javascript tutorial](https://htmldog.com/guides/javascript/intermediate/)  
+Having already felt comfortable with the basics of JavaScript from past experience, I started with the [HTML Dog intermediate javascript tutorial](https://htmldog.com/guides/javascript/intermediate/). This tutorial moved past the basics of JavaScript and introduced how to use JavaScript with a website. The topics covered were the DOM, events, callbacks, AJAX, JSON, Scope, and jQuery.  
   
 [Back to portfolio](https://timblakel.github.io/)  
