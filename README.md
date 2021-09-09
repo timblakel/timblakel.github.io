@@ -11,7 +11,7 @@
 [https://timblakel.github.io/easeJS/easeJS.html](https://timblakel.github.io/easeJS/easeJS.html)  
 (insert description)  
     
-[Changelog and to do list](https://timblakel.github.io/changelogToDo/)
+[Change log and to do list](https://timblakel.github.io/changelogToDo/)
   
 
 
