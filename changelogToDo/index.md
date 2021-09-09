@@ -1,5 +1,5 @@
 ## Changelog  
-09/09/21  
+09/02/21 - 09/09/21  
 - Completed beginner CSS and HTML tutorials resulting in two basic sites.
 - Read through intermediate and advanced JavaScript tutorials.
 - Read through a brief TypeScript tutorial.
