@@ -10,7 +10,6 @@
 - Add to bezier site HTML and CSS. Title, description, etc.
 - Add to bezier TypeScript features: ability to add points  
 - Refine easeJS_site.ts script (specify types)  
-### Far Future To Do  
 - Complete and/or read introductory React (+Hooks) and Bootstrap tutorials.  
 - Complete and/or read introductory Jest tutorials.  
   
