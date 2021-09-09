@@ -8,7 +8,7 @@
 - [TypeScript in 5 minutes tutorial](https://timblakel.github.io/tutorial/typeScript5min/)  
   
 ### Bezier Curve Site  
-[https://timblakel.github.io/easeJS/easeJS.html](https://timblakel.github.io/easeJS/easeJS.html)  
+[https://timblakel.github.io/easelJS/easelJS.html](https://timblakel.github.io/easelJS/easelJS.html)  
 (insert description)  
     
 [Change log and to do list](https://timblakel.github.io/changelogToDo/)
