@@ -4,7 +4,7 @@
 - Read through intermediate and advanced JavaScript tutorials.
 - Read through a brief TypeScript tutorial.
 - Organized portfolio.
-- Utilized TypeScript, EaseJS, HTML, and CSS to create a site with an interactive bezier curve visual.  
+- Utilized TypeScript, EaseJS, HTML, to create a site with an interactive bezier curve visual.  
     
 ## To Do List  
 - Add to bezier site HTML and CSS. Title, description, etc.
