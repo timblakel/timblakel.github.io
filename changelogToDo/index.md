@@ -4,12 +4,12 @@
 - Read through intermediate and advanced JavaScript tutorials.
 - Read through a brief TypeScript tutorial.
 - Organized portfolio.
-- Utilized TypeScript, EaseJS, HTML, to create a site with an interactive bezier curve visual.  
+- Utilized TypeScript, EaselJS, HTML, to create a site with an interactive bezier curve visual.  
     
 ## To Do List  
 - Add to bezier site HTML and CSS. Title, description, etc.
 - Add to bezier TypeScript features: ability to add points  
-- Refine easeJS_site.ts script (specify types)  
+- Refine easelJS_site.ts script (specify types)  
 - Complete and/or read introductory React (+Hooks) and Bootstrap tutorials.  
 - Complete and/or read introductory Jest tutorials.  
   

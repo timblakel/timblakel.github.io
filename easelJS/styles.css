@@ -1,0 +1,18 @@
+h1 {
+    font-family: Arial;
+    margin: 10px;
+}
+
+body p {
+    font-family: Arial;
+    margin: 10px;
+}
+
+blockquote {
+    font-family: 'Times New Roman';
+    margin-right: 200px;
+}
+
+canvas {
+    border: 10px;
+}
