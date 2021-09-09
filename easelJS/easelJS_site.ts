@@ -5,8 +5,8 @@ function init(){
     let stage = new createjs.Stage("demoCanvas");
     let windowWidth = window.innerWidth;
     let windowHeight = window.innerHeight;
-    stage.canvas.height =windowHeight;
-    stage.canvas.width = windowWidth;
+    stage.canvas.height = windowHeight - 20;
+    stage.canvas.width = windowWidth - 40;
     stage.update();
     
     let radius: number = 10;

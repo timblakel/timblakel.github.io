@@ -13,6 +13,6 @@ blockquote {
     margin-right: 200px;
 }
 
-canvas {
-    border: 10px;
+#demoCanvas {
+    border: 2px solid black;
 }

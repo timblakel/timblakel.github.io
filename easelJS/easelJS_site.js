@@ -2,8 +2,8 @@ function init() {
     var stage = new createjs.Stage("demoCanvas");
     var windowWidth = window.innerWidth;
     var windowHeight = window.innerHeight;
-    stage.canvas.height = windowHeight;
-    stage.canvas.width = windowWidth;
+    stage.canvas.height = windowHeight - 20;
+    stage.canvas.width = windowWidth - 40;
     stage.update();
     var radius = 10;
     var P1 = fillCircle(radius, windowWidth / 5, windowHeight / 5, "DeepSkyBlue", stage);
