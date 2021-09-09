@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Bezier Curve</title>
+
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="easelJS_site.js"></script>
+  </head>
+  <body onload="init();">
+    <h1>Interactive Bezier Curve</h1>
+
+    <p>Click and drage the blue points to change the curve.</p>
+
+    <blockquote>
+        "Four points P0, P1, P2 and P3 in the plane or in higher-dimensional 
+        space define a cubic Bézier curve. The curve starts at P0 going toward P1 and 
+        arrives at P3 coming from the direction of P2. Usually, it will not pass through 
+        P1 or P2; these points are only there to provide directional information. 
+        The distance between P1 and P2 determines "how far" and "how fast" the curve moves 
+        towards P1 before turning towards P2."
+        <br>
+        <a href="https://en.wikipedia.org/wiki/B%C3%A9zier_curve#Cubic_B%C3%A9zier_curves">Wikipedia</a>
+    </blockquote>
+
+    <canvas id="demoCanvas" width="500" height="300"></canvas>
+
+  </body>
+</html>
