@@ -16,3 +16,7 @@ blockquote {
 #demoCanvas {
     border: 2px solid black;
 }
+
+input {
+    display: inline;
+}
