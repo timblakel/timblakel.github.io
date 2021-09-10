@@ -57,7 +57,6 @@ function init(){
             RGBAInput[i].value = "1";
         }
     }
-
     for (let i = 0; i < 4; i++) {
         RGBAInput[i].addEventListener("input", event => {
             bezierRGBA[i] = parseFloat(RGBAInput[i].value,);
