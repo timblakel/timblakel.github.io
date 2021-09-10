@@ -7,10 +7,10 @@ function init() {
     stage.update();
     // Initialize 4 points
     var radius = 10;
-    var P1 = fillCircle(radius, windowWidth / 5, windowHeight / 5, "rgba(55, 186, 219, 0.59)", stage);
-    var P2 = fillCircle(radius, windowWidth / 5 * 2, windowHeight / 5 * 3, "rgba(55, 186, 219, 0.59)", stage);
-    var P3 = fillCircle(radius, windowWidth / 5 * 3, windowHeight / 5, "rgba(55, 186, 219, 0.59)", stage);
-    var P4 = fillCircle(radius, windowWidth / 5 * 4, windowHeight / 5 * 4, "rgba(55, 186, 219, 0.59)", stage);
+    var P1 = fillCircle(radius, windowWidth / 5, windowHeight / 5, "rgba(46, 46, 213, 0.66)", stage);
+    var P2 = fillCircle(radius, windowWidth / 5 * 2, windowHeight / 5 * 3, "rgba(46, 46, 213, 0.66)", stage);
+    var P3 = fillCircle(radius, windowWidth / 5 * 3, windowHeight / 5, "rgba(46, 46, 213, 0.66)", stage);
+    var P4 = fillCircle(radius, windowWidth / 5 * 4, windowHeight / 5 * 4, "rgba(46, 46, 213, 0.66)", stage);
     // Draw lines between points
     var points = [P1, P2, P3, P4];
     var lines = new createjs.Shape();
@@ -67,7 +67,7 @@ function updateBezier(points, bezier, stage) {
     bezierDraw(points, bezier, stage);
 }
 function updateLine(P0, P1, line, stage) {
-    line.graphics.setStrokeStyle(2).beginStroke("rgba(55, 186, 219, 0.59)");
+    line.graphics.setStrokeStyle(2).beginStroke("rgba(46, 46, 213, 0.66)");
     line.graphics.moveTo(P0.x, P0.y);
     line.graphics.lineTo(P1.x, P1.y).endStroke();
     stage.update();
@@ -90,9 +90,9 @@ function addPoints(points, lines, bezier, stage, radius) {
     delY = delY / magnitude;
     var maxX = stage.canvas.width;
     var maxY = stage.canvas.height;
-    points.push(fillCircle(radius, Math.max(Math.min(prevTwoP[1].x + delX, maxX), 0), Math.max(Math.min(prevTwoP[1].y + delY, maxY), 0), "rgba(55, 186, 219, 0.59)", stage));
-    points.push(fillCircle(radius, Math.max(Math.min(prevTwoP[1].x + delX * 2, maxX), 0), Math.max(Math.min(prevTwoP[1].y + delY * 2, maxY), 0), "rgba(55, 186, 219, 0.59)", stage));
-    points.push(fillCircle(radius, Math.max(Math.min(prevTwoP[1].x + delX * 3, maxX), 0), Math.max(Math.min(prevTwoP[1].y + delY * 3, maxY), 0), "rgba(55, 186, 219, 0.59)", stage));
+    points.push(fillCircle(radius, Math.max(Math.min(prevTwoP[1].x + delX, maxX), 0), Math.max(Math.min(prevTwoP[1].y + delY, maxY), 0), "rgba(46, 46, 213, 0.66)", stage));
+    points.push(fillCircle(radius, Math.max(Math.min(prevTwoP[1].x + delX * 2, maxX), 0), Math.max(Math.min(prevTwoP[1].y + delY * 2, maxY), 0), "rgba(46, 46, 213, 0.66)", stage));
+    points.push(fillCircle(radius, Math.max(Math.min(prevTwoP[1].x + delX * 3, maxX), 0), Math.max(Math.min(prevTwoP[1].y + delY * 3, maxY), 0), "rgba(46, 46, 213, 0.66)", stage));
     updateBezier(points, bezier, stage);
     updateLines(points, lines, stage);
     stage.update();
