@@ -48,8 +48,8 @@ function init() {
         });
     });
     // Animate lines and points to follow 't'
-    var step = 0.003;
-    createjs.Ticker.framerate = (24);
+    var step = 0.003 * 2.5;
+    createjs.Ticker.framerate = (10);
     createjs.Ticker.on("tick", function (tick) {
         beziers.forEach(function (bezier) {
             bezier.updateAllInterpoints(t);

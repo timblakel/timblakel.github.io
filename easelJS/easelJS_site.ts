@@ -59,8 +59,8 @@ function init(){
     })
 
     // Animate lines and points to follow 't'
-    let step: number = 0.003;
-    createjs.Ticker.framerate = (24);
+    let step: number = 0.003*2.5;
+    createjs.Ticker.framerate = (10);
     createjs.Ticker.on("tick", tick => {
         beziers.forEach(bezier => {
             bezier.updateAllInterpoints(t);                    
