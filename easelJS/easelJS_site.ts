@@ -22,8 +22,8 @@ function init(){
     let bezier0: Bezier = beziers[0];
 
     // Initialize bezier points
-    let widthMultipliers: number[] = [1/5, 2/5, 3/5, 4/5];
-    let heightMultipliers: number[] = [1/5, 2/5, 1/5, 2/5];
+    let widthMultipliers: number[] = [3/10, 3/10, 3/5, 7/10];
+    let heightMultipliers: number[] = [3/6, 3/12, 1/6, 4/6];
     for (let i = 0; i < 4; i++) {
         bezier0.getPoints.setShapes(i, fillCircle(bezier0.getPoints.getShapes[i], radius, 
             windowWidth*widthMultipliers[i], windowHeight*heightMultipliers[i], 

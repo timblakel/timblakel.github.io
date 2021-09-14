@@ -17,8 +17,8 @@ function init() {
     var beziers = [new Bezier(stage, pointColor, radius, document)];
     var bezier0 = beziers[0];
     // Initialize bezier points
-    var widthMultipliers = [1 / 5, 2 / 5, 3 / 5, 4 / 5];
-    var heightMultipliers = [1 / 5, 2 / 5, 1 / 5, 2 / 5];
+    var widthMultipliers = [3 / 10, 3 / 10, 3 / 5, 7 / 10];
+    var heightMultipliers = [3 / 6, 3 / 12, 1 / 6, 4 / 6];
     for (var i = 0; i < 4; i++) {
         bezier0.getPoints.setShapes(i, fillCircle(bezier0.getPoints.getShapes[i], radius, windowWidth * widthMultipliers[i], windowHeight * heightMultipliers[i], pointColor, stage));
     }
@@ -29,7 +29,6 @@ function init() {
         beziers.push(new Bezier(stage, pointColor, radius, document, beziers[beziers.length - 1]));
         beziers.forEach(function (bezier) {
             bezier.updateBezier();
-            bezier.updateToggles();
         });
         stage.update();
     });
