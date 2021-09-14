@@ -13,6 +13,7 @@
     - Refined code with classes, types, functions, etc.
     
 ## To Do List  
+09/02/21 - 09/09/21  
 - ~~Add to bezier site HTML and CSS. Title, description, etc.~~  
 - ~~Add to bezier TypeScript features: ability to add points~~  
 - ~~Refine easelJS_site.ts script (specify types)~~  
