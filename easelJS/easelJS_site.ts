@@ -41,7 +41,6 @@ function init(){
         stage.update();
     })
 
-    let t = 0;
     // Toggle extra lines by button
     let extraLinesButton: HTMLInputElement = document.querySelector("#extraLines");
     extraLinesButton.addEventListener('click', event => {
@@ -51,6 +50,7 @@ function init(){
     })
 
     // Toggle extra points by button
+    let t = 0;
     let extraPointsButton: HTMLInputElement = document.querySelector("#extraPoints");
     extraPointsButton.addEventListener('click', event => {
         beziers.forEach(bezier => {
@@ -58,16 +58,15 @@ function init(){
         })
     })
 
+    // Animate lines and points to follow 't'
     let step: number = 0.003;
-    createjs.Ticker.framerate = (30);
+    createjs.Ticker.framerate = (24);
     createjs.Ticker.on("tick", tick => {
-        if (t <= 1.5) { // Debugging if
-                beziers.forEach(bezier => {
-                    bezier.updateAllInterpoints(t);
-                    bezier.updateAllLines();
-                })
-            t = (t + step) % 1;
-        }
+        beziers.forEach(bezier => {
+            bezier.updateAllInterpoints(t);                    
+            bezier.updateAllLines();
+        })
+        t = (t + step) % 1;
     });
     
 }
@@ -82,8 +81,8 @@ class Bezier {
     lines2: createjs.Shape;
     linesToggle: boolean;
     points: Points; // endpoints and handles
-    points1: Points; // midpoints of main points
-    points2: Points; // midpoint of points1
+    points1: Points; // follows line between main points
+    points2: Points; // follows line between points1
     points3: Points; // point that follows curve
     pointsToggle: number;
     curveColor: string;
@@ -100,18 +99,23 @@ class Bezier {
         this.linesToggle = true;
         this.pointsToggle = 0;
 
-        // Assign points
+        // Assign main points
         if (prevBezier == undefined) {
             // If first bezier curve, just create the shape objects
             this.points = new Points(4,pointColor, pointRadius, []);
         } else {
+            // New bezier's first point will be previous beziers last point
             // Get information from previous curve and assign appropiately
             this.linesToggle = prevBezier.getLineToggle;
             let prevShapes: createjs.Shape[] = prevBezier.getPoints.getShapes;
 
+            // Get previous bezier's point toggle
+            this.pointsToggle = prevBezier.pointsToggle;
+
             // Let first point be the last of point of the previous curve
             this.points = new Points(4,pointColor, pointRadius, [prevShapes[prevShapes.length-1]]);
-            // Make new points in line with previous two points
+
+            // Do some math to make new points in line with previous two points for
             let prevTwoP = prevBezier.getPoints.getShapes.slice(-2);
             let delX: number = prevTwoP[1].x - prevTwoP[0].x;
             let delY: number = prevTwoP[1].y - prevTwoP[0].y;
@@ -214,7 +218,7 @@ class Bezier {
         }
         let curveColor: string = `rgba(${bezierRGBA[0]}, ${bezierRGBA[1]}, ${bezierRGBA[2]}, ${bezierRGBA[3]})`;
     
-        // Recursively draw bezier through using all points
+        // Draw bezier through using all points
         let bezierDraw = function (bezier: Bezier,curveColor: string) {
             let points: createjs.Shape[] = bezier.getPoints.getShapes;
             let P1 = points[0];
@@ -230,7 +234,9 @@ class Bezier {
             bezier.curve.graphics.endStroke();
         }
         bezierDraw(this,curveColor);
+
         this.updateAllLines();
+        this.updateToggles();
         stage.update();
     }
 
@@ -276,36 +282,49 @@ class Bezier {
         }
     }
 
+    // Turn lines on/off
     toggleLines(): void {
         this.linesToggle = !this.linesToggle;
         this.updateAllLines();
     }
 
+    // Change toggle value and update points on/off values
     togglePoints(t: number): void {
         this.pointsToggle = (this.pointsToggle + 1) % 4;
-        switch (this.pointsToggle) {
-            case 0:
-                this.points1.toggle();
-                this.points2.toggle();
-                this.points3.toggle();
-                break;
-            case 1:
-                this.points2.toggle();
-                break;
-            case 2:
-                this.points1.toggle();
-                break;
-            case 3:
-                this.points3.toggle();
-                break;                                         
-        }
+        this.updateToggles();
         this.updateAllInterpoints(t);
     }
 
-    updateAllInterpoints(t: number): void {
+    // Use current toggle value to turn points on/off
+    updateToggles(): void {
+        switch (this.pointsToggle) {
+            case 0:
+                this.points1.toggle(true);
+                this.points2.toggle(true);
+                this.points3.toggle(true);
+                break;
+            case 1:
+                this.points1.toggle(true);
+                this.points2.toggle(false);
+                this.points3.toggle(true);
+                break;
+            case 2:
+                this.points1.toggle(false);
+                this.points2.toggle(false);
+                break;
+            case 3:
+                this.points1.toggle(false);
+                this.points2.toggle(false);
+                this.points3.toggle(false);
+                break;                                         
+        }        
+    }
+
+    // Update and positions
+    updateAllInterpoints(t: number): void {        
         updateInterpoints(this.points,this.points1,t,this.stage);
         updateInterpoints(this.points1,this.points2,t,this.stage);
-        updateInterpoints(this.points2,this.points3,t,this.stage);
+        updateInterpoints(this.points2,this.points3,t,this.stage);        
     }
 }
 
@@ -314,6 +333,7 @@ class Points {
     color: string;
     defaultColor: string;
     radius: number;
+    isOn: boolean;
 
     constructor(numPoints: number, color: string, radius: number, existingPoints: createjs.Shape[]) {
         this.color = color;
@@ -346,19 +366,22 @@ class Points {
         return this.defaultColor;
     }
 
+    public get getToggle() {
+        return this.isOn;
+    }
+
     public setShapes(index: number, shape: createjs.Shape) {
         this.shapes[index] = shape;
     }
 
-    public toggle() {
-        let noColor: string = "rgba(0, 0, 0, 0)"
-        if (this.color != noColor) {
-            this.color = noColor;
+    public toggle(onOff: boolean) {
+        this.isOn = onOff;
+        if (this.isOn) {
+            this.color = this.defaultColor;            
         } else {
-            this.color = this.defaultColor;
+            this.color = "rgba(0,0,0,0)"
         }
     }
-    
 }
 
 // create point
@@ -377,45 +400,8 @@ function drawLine(P0: createjs.Shape,P1: createjs.Shape,line: createjs.Shape,col
     stage.update();
 }
 
-
-// OLD FUNCTION
-// add three points to attach another bezier segment
-// function addPoints(bezier: Bezier,stage: createjs.Stage,radius: number) {
-//     let points: createjs.Shape[] = bezier.points;
-
-//     // Make new points in line with previous two points
-//     let prevTwoP = points.slice(-2);
-//     let delX: number = prevTwoP[1].x - prevTwoP[0].x;
-//     let delY: number = prevTwoP[1].y - prevTwoP[0].y;
-//     let magnitude: number = (Math.sqrt(Math.pow(delX,2) + Math.pow(delY,2))) * 0.02;
-//     delX = delX / magnitude;
-//     delY = delY / magnitude;
-    
-//     // Ensure new points are within canvas
-//     let maxX: number = stage.canvas.width;
-//     let maxY: number = stage.canvas.height;
-
-//     points.push(fillCircle(radius,Math.max(Math.min(prevTwoP[1].x+delX,maxX),0),Math.max(Math.min(prevTwoP[1].y+delY,maxY),0),color,stage));
-//     points.push(fillCircle(radius,Math.max(Math.min(prevTwoP[1].x+delX*2,maxX),0),Math.max(Math.min(prevTwoP[1].y+delY*2,maxY),0),color,stage));
-//     points.push(fillCircle(radius,Math.max(Math.min(prevTwoP[1].x+delX*3,maxX),0),Math.max(Math.min(prevTwoP[1].y+delY*3,maxY),0),color,stage));
-
-//     updateBezier(points,bezier,RGBAInput,stage);
-//     updateLines(points,lines,color,stage);
-//     stage.update();
-
-//     // Add drag functionality to new points
-//     points.slice(-3).forEach(item => {
-//         item.on("pressmove", function(evt) {
-//             item.x = evt.stageX;
-//             item.y = evt.stageY;
-//             updateBezier(points,bezier,RGBAInput,stage);
-//             updateLines(points,lines,color,stage);
-//             stage.update();
-//         })
-//     })
-//     updateLines(points,lines,color,stage);
-// }
-
+// Take points and interpoints, place interpoints on lines connecting points
+// t represents progress from one end of line to the other
 function updateInterpoints(points: Points,interpoints: Points,t: number,stage: createjs.Stage): Points {
     let pShapes: createjs.Shape[] = points.getShapes;
     let iShapes: createjs.Shape[] = interpoints.getShapes;
