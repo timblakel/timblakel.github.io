@@ -25,7 +25,7 @@
 - Complete React/Hooks tutorials: [[1]](https://reactjs.org/tutorial/tutorial.html)[[2]](https://reactjs.org/docs/hooks-intro.html)  
 - Brainstorm and create a project of my own that utilizes React & Hooks.  
     - Maybe a flash cards site. Ability to add/remove flash cards and a study mode.  
-- Read about github [project boards](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards) and utliize for my next (React) project and on going portfolio development.  
+- Read about github [project boards](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards) and utilize for my next (React) project and on going portfolio development.  
 - (low priority) Optimize bezier site: only calculate points/lines positions if toggled on.  
   
 [Back to portfolio](https://timblakel.github.io/)
