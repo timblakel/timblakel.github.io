@@ -12,7 +12,7 @@
 I used to project to introduce HTML, CSS, and JavaScript/TypeScript. 
 After completing some basic tutorials, I wanted to make a project on my own.
 I used HTML to lay out the page, CSS to make the site more visually appealing, and TypeScript to handle the interactive bezier curve.
-In my typescript code, I used classes, functions, arrays, etc. to keep track of the bezier curves related points and lines.
+In my typescript code, I used classes, functions, arrays, etc. to keep track of the bezier curves and children points and lines.
 
     
 [Change log and to do list](https://timblakel.github.io/changelogToDo/)
