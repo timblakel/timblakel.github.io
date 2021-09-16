@@ -20,4 +20,9 @@
 - Complete and/or read introductory React (+Hooks) and Bootstrap tutorials.  
 - Complete and/or read introductory Jest tutorials.  
   
+9/16/21
+- Complete React/Hooks tutorials: [[1]](https://reactjs.org/tutorial/tutorial.html)[[2]](https://reactjs.org/docs/hooks-intro.html)  
+- (If I have extra time) Optimize bezier site, only calculate points/lines positions if toggled on.  
+- Think of and create a project of my own that utilizes React & Hooks.
+  
 [Back to portfolio](https://timblakel.github.io/)
