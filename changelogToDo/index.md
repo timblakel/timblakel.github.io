@@ -9,6 +9,7 @@
 9/14/21
 - Updated bezier curve site.  
     - Added title, description, buttons.  
+    - Animated points/lines that visualize the math behind a bezier curve
     - Added features to add bezier segments, change curve color, toggle extra lines/points.  
     - Refined code with classes, types, functions, etc.
     
@@ -22,7 +23,9 @@
   
 9/16/21
 - Complete React/Hooks tutorials: [[1]](https://reactjs.org/tutorial/tutorial.html)[[2]](https://reactjs.org/docs/hooks-intro.html)  
-- (If I have extra time) Optimize bezier site, only calculate points/lines positions if toggled on.  
-- Think of and create a project of my own that utilizes React & Hooks.
+- Brainstorm and create a project of my own that utilizes React & Hooks.  
+    - Maybe a flash cards site. Ability to add/remove flash cards and a study mode.  
+- Read about github [project boards](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards) and utliize for my next (React) project and on going portfolio development.  
+- (low priority) Optimize bezier site: only calculate points/lines positions if toggled on.  
   
 [Back to portfolio](https://timblakel.github.io/)
