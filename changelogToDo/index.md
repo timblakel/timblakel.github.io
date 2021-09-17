@@ -22,7 +22,7 @@
 - Complete and/or read introductory Jest tutorials.  
   
 9/16/21
-- Complete React/Hooks tutorials: [[1]](https://reactjs.org/tutorial/tutorial.html)[[2]](https://reactjs.org/docs/hooks-intro.html)  
+- Complete React/Hooks tutorials: [[1]](https://reactjs.org/tutorial/tutorial.html)[[2]](https://reactjs.org/docs/hooks-intro.html) and [Setting up a CI/CD workflow on GitHub Actions for a React App (with GitHub Pages and Codecov)](https://dev.to/dyarleniber/setting-up-a-ci-cd-workflow-on-github-actions-for-a-react-app-with-github-pages-and-codecov-4hnp)    
 - Brainstorm and create a project of my own that utilizes React & Hooks.  
     - Maybe a flash cards site. Ability to add/remove flash cards and a study mode.  
 - Read about github [project boards](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards) and utilize for my next (React) project and on going portfolio development.  
