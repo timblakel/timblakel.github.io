@@ -5,7 +5,7 @@ export enum CardKind {
 }
 
 export interface Card {
-    ID: number
+    id: number
     kind: CardKind
     front: string
     back: string
