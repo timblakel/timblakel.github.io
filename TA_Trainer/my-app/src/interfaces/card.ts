@@ -8,5 +8,5 @@ export interface Card {
     ID: number
     kind: CardKind
     front: string
-    fack: string
+    back: string
 }
