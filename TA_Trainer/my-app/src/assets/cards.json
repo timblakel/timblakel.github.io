@@ -1,24 +1,24 @@
 [
     {
-      "ID": 1,
+      "id": 1,
       "front": "apple",
       "back": "red",
       "kind": "Food"
     },
     {
-      "ID": 2,
+      "id": 2,
       "front": "banana",
       "back": "yellow",
       "kind": "Food"
     },
     {
-      "ID": 3,
+      "id": 3,
       "front": "carrot",
       "back": "orange",
       "kind": "Food"
     },
     {
-      "ID": 4,
+      "id": 4,
       "front": "dragon",
       "back": "fire",
       "kind": "Animal"
