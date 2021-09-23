@@ -11,7 +11,7 @@ export function ControlPanel({setCard, reveal, isRevealed}: {setCard: (c: Card)=
 
     return <Col>
     <h1>Control Panel</h1>
-    <Button onClick={setRandomCard}>Swap Current Card</Button>
+    <Button onClick={setRandomCard} className="m-2">Swap Current Card</Button>
     <Button onClick={() => reveal(!isRevealed)}>Reveal Answer</Button>
     </Col>
 }
