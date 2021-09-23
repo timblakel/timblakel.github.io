@@ -1,7 +1,7 @@
 import { Col, Card as BootstrapCard } from 'react-bootstrap';
 import { Card } from '../interfaces/card';
 
-export function CardViewer({card}: {card: Card}): JSX.Element {
+export function CardViewer({card, isRevealed}: {card: Card, isRevealed: boolean}): JSX.Element {
     return <Col>
     <BootstrapCard>
         <BootstrapCard.Body>
@@ -9,9 +9,9 @@ export function CardViewer({card}: {card: Card}): JSX.Element {
             <BootstrapCard.Text>
                 <div><strong>Front:</strong> {card.front}</div>
             </BootstrapCard.Text>
-            <BootstrapCard.Text>
+            {isRevealed && <BootstrapCard.Text>
                 <div><strong>Back:</strong> {card.back}</div>
-            </BootstrapCard.Text>
+            </BootstrapCard.Text>}
         </BootstrapCard.Body>
     </BootstrapCard>
 
