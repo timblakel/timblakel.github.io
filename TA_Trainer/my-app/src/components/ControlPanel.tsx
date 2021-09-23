@@ -4,10 +4,12 @@ import CARDS from '../assets/cards.json';
 import { getRandomElement } from '../utilities/data';
 
 export function ControlPanel({setCard}: {setCard: (c: Card)=>void}): JSX.Element {
+    function setRandomCard() {
+        setCard(getRandomElement(CARDS as Card[]))
+    }
+
     return <Col>
     <h1>Control Panel</h1>
-    <Button onClick={
-        () => setCard(getRandomElement(CARDS as Card[]))
-    }>Swap Current Card</Button>
+    <Button onClick={setRandomCard}>Swap Current Card</Button>
     </Col>
 }
