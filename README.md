@@ -6,6 +6,7 @@
 - [JavaScript intermediate tutorial](https://timblakel.github.io/tutorial/intermediateJS/)  
 - [JavaScript advanced tutorial](https://timblakel.github.io/tutorial/advancedJS/)  
 - [TypeScript in 5 minutes tutorial](https://timblakel.github.io/tutorial/typeScript5min/)  
+- [TA-Trainer React TypeScript Web App Walkthrough](https://timblakel.github.io/tutorial/reactTA-Trainer/)
   
 ### Bezier Curve Site  
 [https://timblakel.github.io/easelJS/easelJS.html](https://timblakel.github.io/easelJS/easelJS.html)  
