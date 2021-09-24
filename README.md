@@ -15,7 +15,7 @@ I used HTML to lay out the page, CSS to make the site more visually appealing, a
 In my typescript code, I used classes, functions, arrays, etc. to keep track of the bezier curves and children points and lines.  
   
 ### Flash Card Studying Site
-[https://timblakel.github.io/react-flash-card/](https://timblakel.github.io/react-flash-card/) and [repository](https://github.com/timblakel/timblakel.github.io).  
+[https://timblakel.github.io/react-flash-card/](https://timblakel.github.io/react-flash-card/) and [repository](https://github.com/timblakel/react-flash-card.git).  
 I decided to make a site for studying flash cards after watching Dr. Bart's TA-Trainer video. I used my previous knowledge of TypeScript, HTML, and CSS and added what I learned about React and Bootstrap. Hooks keep track of flash cards, which can be cycled through, flipped, saved, and have new flash cards created.   
 
     
