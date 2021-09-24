@@ -14,7 +14,8 @@
     - Refined code with classes, types, functions, etc.
 
 9/23/21
-- Created a React flash cards [site](https://timblakel.github.io/react-flash-card/) 
+- Created a [basic React app](https://timblakel.github.io/my-app/) [(Repository)](https://github.com/timblakel/my-app) by following Dr. Bart's [TA-Trainer Video](https://www.youtube.com/watch?v=q8eYF6cUi5c).
+- Started from scratch and created a React flash cards [site](https://timblakel.github.io/react-flash-card/).  
     - Used React/Hooks and Bootstrap
     - Added ability to cycle through cards, flip them, and add new cards.
     - Used Boostrap, HTML, and CSS to layout the site and create functional buttons.  
