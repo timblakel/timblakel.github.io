@@ -14,9 +14,11 @@
     - Refined code with classes, types, functions, etc.
 
 9/23/21
-- Created a React flash cards site
+- Created a React flash cards [site](https://timblakel.github.io/react-flash-card/) 
     - Used React/Hooks and Bootstrap
-    - Added ability to cycle through cards, flip them, and add new cards
+    - Added ability to cycle through cards, flip them, and add new cards.
+    - Used Boostrap, HTML, and CSS to layout the site and create functional buttons.  
+- Following [this tutorial](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f) to deploy my React app on Github pages.  
     
 ## To Do List  
 09/02/21 - 09/09/21  
