@@ -17,7 +17,7 @@ In my typescript code, I used classes, functions, arrays, etc. to keep track of 
   
 ### Flash Card Studying Site
 [https://timblakel.github.io/react-flash-card/](https://timblakel.github.io/react-flash-card/) and [repository](https://github.com/timblakel/react-flash-card.git).  
-I decided to make a site for studying flash cards after watching Dr. Bart's TA-Trainer video. I used my previous knowledge of TypeScript, HTML, and CSS and added what I learned about React and Bootstrap. Hooks keep track of flash cards, which can be cycled through, flipped, saved, and have new flash cards created. I built upon Dr. Bart's demonstration of interfaces to make my own flashCard interface. I also took inspiration from the TA-trainer's use of hooks to implement in my own app.  
+I decided to make a site for studying flash cards after watching Dr. Bart's TA-Trainer video. I used my previous knowledge of TypeScript, HTML, and CSS and added what I learned about React and Bootstrap. Hooks keep track of flash cards, which can be cycled through, flipped, saved, and have new flash cards created. I built upon Dr. Bart's demonstration of interfaces to make my own flashCard interface (changed fields). I also took inspiration from the TA-trainer's use of hooks to implement in my own app. For example, Dr. Bart followed the state of a boolean determining whether the answer is revealed, but I created a field in flashCard interface corresponding to if it is flipped up/down.  
 
     
 [Change log and to do list](https://timblakel.github.io/changelogToDo/)
