@@ -37,9 +37,10 @@
 - (low priority) Optimize bezier site: only calculate points/lines positions if toggled on.  
   
 9/23/21
-- Add ability to remove/edit flash cards.
-- View list of flash cards
-- Make flash card site prettier
-- Add tests to flash card site
+- Flash Card React App
+    - Add ability to remove/edit flash cards. (Edit current flashcard).  
+    - Create component to view the flash cards as a list all at once.
+    - Make flash card site prettier by adding buttons styles, headers, and general CSS adjustments.  
+    - Add tests (React Testing Library) to flash card site to demonstrate testing knowledge and ensure the app is working properly.   
   
 [Back to portfolio](https://timblakel.github.io/)
