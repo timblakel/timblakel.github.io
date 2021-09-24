@@ -19,7 +19,7 @@
     - Used React/Hooks and Bootstrap
     - Added ability to cycle through cards, flip them, and add new cards.
     - Used Boostrap, HTML, and CSS to layout the site and create functional buttons.  
-- Following [this tutorial](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f) to deploy my React app on Github pages.  
+- Followed [this tutorial](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f) to deploy my React app on Github pages.  
     
 ## To Do List  
 09/02/21 - 09/09/21  
