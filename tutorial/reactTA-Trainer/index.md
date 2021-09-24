@@ -1,3 +1,3 @@
-I watched Dr. Bart's ["TA Trainer React TypeScript Web App Walkthrough"](https://www.youtube.com/watch?v=q8eYF6cUi5c) tutorial and created [this](https://timblakel.github.io/my-app/) basic React app. [(repository)](https://github.com/timblakel/my-app)
+I watched Dr. Bart's ["TA Trainer React TypeScript Web App Walkthrough"](https://www.youtube.com/watch?v=q8eYF6cUi5c) tutorial and created [this](https://timblakel.github.io/my-app/) basic React app. [(repository)](https://github.com/timblakel/my-app). After watching the video, I had gained a basic knowledge on React apps and using hooks. I also learned about the use of Bootstrap for laying out sites and using component libraries.    
   
 [Back to portfolio](https://timblakel.github.io/)  
