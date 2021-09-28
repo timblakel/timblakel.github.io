@@ -43,7 +43,7 @@
   
 9/23/21
 - Flash Card React App
-    - Add ability to remove/edit flash cards. (Edit current flashcard).  
+    - ~~Add ability to remove/edit flash cards. (Edit current flashcard).~~  
     - Create component to view the flash cards as a list all at once.
     - Make flash card site prettier by adding buttons styles, headers, and general CSS adjustments.  
     - Add tests (React Testing Library) to flash card site to demonstrate testing knowledge and ensure the app is working properly.   
