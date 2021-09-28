@@ -20,6 +20,11 @@
     - Added ability to cycle through cards, flip them, and add new cards.
     - Used Boostrap, HTML, and CSS to layout the site and create functional buttons.  
 - Followed [this tutorial](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f) to deploy my React app on Github pages.  
+  
+9/27/21
+- Updated Flash Card React App
+    - Updated visuals by adjusting spacing, colors, labels, etc.
+    - Added ability to edit the current flashcard (including deleting the current card)
     
 ## To Do List  
 09/02/21 - 09/09/21  
