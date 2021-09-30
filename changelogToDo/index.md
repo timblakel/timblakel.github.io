@@ -52,8 +52,8 @@
 9/23/21
 - flashcard React App
     - ~~Add ability to remove/edit flashcards. (Edit current flashcard).~~  
-    - Create component to view the flashcards as a list all at once.
-    - Make flashcard site prettier by adding buttons styles, headers, and general CSS adjustments.  
+    - ~~Create component to view the flashcards as a list all at once.~~
+    - ~~Make flashcard site prettier by adding buttons styles, headers, and general CSS adjustments.~~  
     - ~~Add tests (React Testing Library) to flashcard site to demonstrate testing knowledge and ensure the app is working properly.~~   
   
 [Back to portfolio](https://timblakel.github.io/)
