@@ -25,6 +25,7 @@
 - Updated Flashcard React App
     - Updated visuals by adjusting spacing, colors, labels, etc.
     - Added ability to edit the current flashcard (including deleting the current card)
+    - Prevent deleting last flashcard and give modal warning
   
 9/28/21  
 - Added tests to Flashcard React App (React testing library)  
