@@ -6,14 +6,14 @@
 - Organized portfolio.
 - Utilized TypeScript, EaselJS, HTML, to create a site with an interactive bezier curve visual.  
   
-9/14/21
+9/14/21  
 - Updated bezier curve site.  
     - Added title, description, buttons.  
     - Animated points/lines that visualize the math behind a bezier curve
     - Added features to add bezier segments, change curve color, toggle extra lines/points.  
     - Refined code with classes, types, functions, etc.
 
-9/23/21
+9/23/21  
 - Created a [basic React app](https://timblakel.github.io/my-app/) [(repository)](https://github.com/timblakel/my-app) by following Dr. Bart's [TA-Trainer Video](https://www.youtube.com/watch?v=q8eYF6cUi5c).
 - Started from scratch and created a React flashcards [site](https://timblakel.github.io/react-flash-card/).  
     - Used React/Hooks and Bootstrap
@@ -21,13 +21,16 @@
     - Used Boostrap, HTML, and CSS to layout the site and create functional buttons.  
 - Followed [this tutorial](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f) to deploy my React app on Github pages.  
   
-9/27/21
+9/27/21  
 - Updated Flashcard React App
     - Updated visuals by adjusting spacing, colors, labels, etc.
     - Added ability to edit the current flashcard (including deleting the current card)
   
-9/28/21
+9/28/21  
 - Added tests to Flashcard React App (React testing library)  
+  
+9/30/21  
+- Updated CSS/visuals of Flashcard React App
     
 ## To Do List  
 09/02/21 - 09/09/21  
