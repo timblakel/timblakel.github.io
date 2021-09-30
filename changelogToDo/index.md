@@ -31,6 +31,7 @@
   
 9/30/21  
 - Updated CSS/visuals of Flashcard React App
+- Added list of all flashcards
     
 ## To Do List  
 09/02/21 - 09/09/21  
